@@ -1,0 +1,34 @@
+<html> 
+<head>
+<title> Programming Activity # 1 </title> 
+</head> 
+<body>
+<div ng-app="" ng-init="mobilephones = [{brand: 'Apple', model: 'Iphone 12', description: 'New'}, 
+{brand: 'Samsung', model: 'Note 10', description: 'Old'}, 
+{brand: 'Vivo', model: 'Y71', description: 'Old'}, 
+{brand: 'Xiaomi', model: 'Redmi Note 10', description: 'New'}, 
+{brand: 'Huawei', model: 'Y6 Pro', description: 'New'}, 
+{brand: 'Asus', model: 'Zenfone', description: 'Old'}, 
+{brand: 'Oppo', model: 'A5s', description: 'Old'}, 
+{brand: 'Realme', model: 'Realme 7', description: 'New'}, 
+{brand: 'Nokia', model: 'Nokia 2.1', description: 'New'}, 
+{brand: 'Huawei', model:'Y9 Pro’, description: 'New'}]">
+<h1> Programming Activity # 1 </h1>
+<p> Enter your Name: <input type="text" ng-model="name" ></p> 
+<p> Your Name is: <span ng-bind="name"></span>!</p>
+<p> Enter your Address: <input type="text" ng-model="address" ></p> 
+<p> Your Address is: <span ng-bind="address"></span>!</p>
+<p> Enter your Senior High School : <input type="text" ng-model="shs” </p> 
+<p> Your Senior High School is: <span ng-bind="shs"></span>!</p>
+<p> Enter your Course : <input type="text" ng-model="course" ></p> 
+<p> Your Course is: <span ng-bind="course"></span>!</p>
+<p><b>List of Mobile Phones: </b></p> 
+<ol> 
+<li ng-repeat="mp in mobilephones">
+{{‘Brand: ' + mp.brand + ';' + 'Model: ' + mp.model + ','+ ' Description: ' + mp.description}} 
+</li> 
+</ol>
+ </div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"> </script> 
+</body> 
+</html>
