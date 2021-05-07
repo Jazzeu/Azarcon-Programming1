@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+Full Name <br>
+Firstname: <input type="text" ng-model="fname"><br>
+Middlename: <input type="text" ng-model="mname"><br>
+Lastname: <input type="text" ng-model="lname"><br>
+Your fullname is:{{fname + " " + mname + " " + lname}}
+<br><br>
+<br>
+Strand: <input type="text" ng-model="strand"><br>
+Grade Level: <input type="text" ng-model="gradelevel"><br>
+School: <input type="text" ng-model="school"><br>
+Your strand, grade leve and school is:{{strand + " " + gradelevel + " " + school}}
+<br><br>
+Grades in Subject <br> <br>
+Math: <input type="text" ng-model="math"><br>
+Science: <input type="text" ng-model="science"><br>
+English: <input type="text" ng-model="english"><br>
+Filipino: <input type="text" ng-model="filipino"><br>
+TLE: <input type="text" ng-model="tle"><br>
+Grade: <input type="text" ng-model="grade"><br>
+<br>
+<br>
+Your Grades are: {{math + " " + science + " " + english + " " + filipino+ " " + tle}}
+<br>
+<br>
+Remarks: {{grade}}
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    
+    $scope.fname = "";
+    $scope.mname="";
+     $scope.lname = "";
+    $scope.math = "";
+    $scope.science="";
+     $scope.english = "";
+    $scope.filipino="";
+     $scope.tle = "";
+    $scope.grade = "";
+    
+});
+</script>
+
+</body>
+</html>
